@@ -19,13 +19,14 @@ enum userRole {
 }
 
 model user {
-  id             String    @id @default(auto()) @map("_id") @db.ObjectId
-  name           String
-  username       String    @unique
-  email          String    @unique
-  email_verified DateTime?
-  password       String
-  role           userRole  @default(user)
+  id                String   @id @default(auto()) @map("_id") @db.ObjectId
+  name              String
+  username          String   @unique
+  email             String   @unique
+  emailVerified     Boolean  @default(false)
+  verificationToken String?
+  password          String
+  role              userRole @default(user)
 
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt

@@ -3,8 +3,9 @@ import cors, { type CorsOptions } from "cors";
 import dotenv from "dotenv";
 import express, { type Request, type Response } from "express";
 import rateLimit from "express-rate-limit";
-import jwt from "jsonwebtoken";
+import transporter from "./utility/transporter";
 import routerV1 from "./v1";
+import emailVerification from "./email/emailVerification";
 
 dotenv.config();
 
