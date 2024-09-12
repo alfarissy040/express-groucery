@@ -1,4 +1,4 @@
-const emailVerification = `<!DOCTYPE html>
+const otpEmailTemplate = `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -30,14 +30,18 @@ const emailVerification = `<!DOCTYPE html>
     .content {
       padding: 20px;
     }
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      margin-top: 20px;
+    .otp {
+      display: block;
+      width: fit-content;
+      margin: 20px auto;
+      padding: 15px;
       background-color: #4CAF50; /* Main Green */
       color: white;
-      text-decoration: none;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 4px;
       border-radius: 5px;
+      text-align: center;
     }
     .footer {
       text-align: center;
@@ -58,10 +62,10 @@ const emailVerification = `<!DOCTYPE html>
     </div>
     <div class="content">
       <p>Hello,</p>
-      <p>Thank you for signing up at Groucery! To verify your email address, please click the button below:</p>
-      <a href="{{verification_link}}" class="button">Verify Email</a>
+      <p>Thank you for registering with Groucery! To complete your registration, please use the following One-Time Password (OTP) within the next 10 minutes:</p>
+      <div class="otp">{{OTP_CODE}}</div>
       <p class="divider"></p>
-      <p>If you did not sign up for this account, please ignore this email.</p>
+      <p>If you did not request this OTP, please ignore this email or contact our support team.</p>
     </div>
     <div class="footer">
       <p>&copy; 2024 Groucery. All rights reserved.</p>
@@ -70,4 +74,4 @@ const emailVerification = `<!DOCTYPE html>
 </body>
 </html>`;
 
-export default emailVerification;
+export default otpEmailTemplate;

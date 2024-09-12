@@ -1,14 +1,14 @@
 import { hash } from "bcryptjs";
-import jwt, { decode, type JWT } from "jsonwebtoken";
+import jwt, { decode } from "jsonwebtoken";
 
-export const signJWT = (data: Record<string, any>, expired?: string | number) =>
+export const signJWT = (data: Record<string, any>, options?: jwt.SignOptions) =>
 	jwt.sign(data, process.env.SECRET as string, {
-		expiresIn: expired ?? "1 days",
+		...options,
 	});
 
 export const decodeJWT = (token: string) => {
 	try {
-		return decode(token, { json: true }) as JWT;
+		return decode(token, { json: true });
 	} catch (error) {
 		throw { status: 401, message: "Invalid token" };
 	}

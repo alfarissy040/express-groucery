@@ -4,6 +4,7 @@ import { signJWT } from "@/utility";
 import prisma from "@/utility/prisma";
 import { compare } from "bcryptjs";
 import type { Request, Response } from "express";
+import moment from "moment";
 
 const loginRoute = async (req: Request, res: Response) => {
     const body: ZLoginUser = req.body;
@@ -25,6 +26,7 @@ const loginRoute = async (req: Request, res: Response) => {
             email: user.email,
             username: user.username,
             role: user.role,
+            exp: moment().add(24, "h").valueOf(),
         });
 
         res.cookie("jwt", token, {
@@ -32,7 +34,7 @@ const loginRoute = async (req: Request, res: Response) => {
             secure: true,
             maxAge: 24 * 3600,
         });
-        return res.status(202);
+        return res.status(200).send({ message: "Login success!" });
     } catch (err) {
         const error = err as TCommonError;
         return res

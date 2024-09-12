@@ -1,10 +1,11 @@
-import emailVerification from "@/email/emailVerification";
+import otpEmailTemplate from "@/email/otpEmailTemplate";
 import type { ZRegisterUser } from "@/schema/registerSchema";
 import type { TCommonError } from "@/types";
 import { hashPassword, signJWT } from "@/utility";
 import prisma from "@/utility/prisma";
 import transporter from "@/utility/transporter";
 import type { Request, Response } from "express";
+import moment from "moment";
 
 const registerRoute = async (req: Request, res: Response) => {
     const body: ZRegisterUser = req.body;
@@ -31,11 +32,10 @@ const registerRoute = async (req: Request, res: Response) => {
         }
 
         const hash = await hashPassword(password);
+        const otpCode = Math.floor(100000 + Math.random() * 900000);
         const token = signJWT({
-            username: username,
-            email: email,
-            name: name,
-            role: "USER",
+            otp: otpCode,
+            exp: moment().add(10, "m").valueOf(),
         })
         await prisma.user.create({
             data: {
@@ -50,8 +50,8 @@ const registerRoute = async (req: Request, res: Response) => {
         await transporter.sendMail({
             from: 'no-reply <admin@groucery.com>',
             to: email,
-            subject: "Please Verify Your Email Address",
-            html: emailVerification.replace("{{username}}", name).replace("{{verification_link}}", `https://localhost:3000/auth/verify/${token}`),
+            subject: "Your One-Time Password (OTP) for Groucery",
+            html: otpEmailTemplate.replace("{{OTP_CODE}}", otpCode.toString()),
         });
 
         return res

@@ -9,4 +9,9 @@ declare module "jsonwebtoken" {
         iat: number
         exp: number
     }
+    interface OtpJWT extends JwtPayload {
+        otp: number
+        iat: number
+        exp: number
+    }
 }
