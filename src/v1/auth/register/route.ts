@@ -1,9 +1,9 @@
-import otpEmailTemplate from "@/email/otpEmailTemplate";
-import type { ZRegisterUser } from "@/schema/registerSchema";
-import type { TCommonError } from "@/types";
-import { hashPassword, signJWT } from "@/utility";
-import prisma from "@/utility/prisma";
-import transporter from "@/utility/transporter";
+import otpEmailTemplate from "@/src/email/otpEmailTemplate";
+import type { ZRegisterUser } from "@/src/schema/registerSchema";
+import type { TCommonError } from "@/src/types";
+import { hashPassword, signJWT } from "@/src/utility";
+import prisma from "@/src/utility/prisma";
+import transporter from "@/src/utility/transporter";
 import type { Request, Response } from "express";
 import moment from "moment";
 

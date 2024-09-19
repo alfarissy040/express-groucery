@@ -31,3 +31,46 @@ model user {
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 }
+
+model products {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  id_category String[] @db.ObjectId
+  id_unit     String   @db.ObjectId
+  name        String
+  price       Int
+  stock       Int      @default(0)
+  description String?
+  image_url   String?
+  version     Int      @default(1)
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  category category          @relation(fields: [id_category], references: [id], onUpdate: Cascade, onDelete: NoAction)
+  unit     measurement_units @relation(fields: [id_unit], references: [id], onUpdate: Cascade, onDelete: NoAction)
+
+  @@unique([id, version])
+}
+
+model category {
+  id   String @id @default(auto()) @map("_id") @db.ObjectId
+  name String
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  products products[]
+}
+
+model measurement_units {
+  id   String @id @default(auto()) @map("_id") @db.ObjectId
+  code String
+  name String
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  products products[]
+
+  @@unique([code, name])
+}

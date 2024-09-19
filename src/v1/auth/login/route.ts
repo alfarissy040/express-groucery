@@ -1,7 +1,7 @@
-import type { ZLoginUser } from "@/schema/loginSchema";
-import type { TCommonError } from "@/types";
-import { signJWT } from "@/utility";
-import prisma from "@/utility/prisma";
+import type { ZLoginUser } from "@/src/schema/loginSchema";
+import type { TCommonError } from "@/src/types";
+import { signJWT } from "@/src/utility";
+import prisma from "@/src/utility/prisma";
 import { compare } from "bcryptjs";
 import type { Request, Response } from "express";
 import moment from "moment";

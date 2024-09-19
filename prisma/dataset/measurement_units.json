@@ -1,0 +1,22 @@
+[
+	{
+		"code": "pcs",
+		"name": "Pieces"
+	},
+	{
+		"code": "kg",
+		"name": "Kilogram"
+	},
+	{
+		"code": "g",
+		"name": "Gram"
+	},
+	{
+		"code": "ml",
+		"name": "Milliliter"
+	},
+	{
+		"code": "l",
+		"name": "Liter"
+	}
+]

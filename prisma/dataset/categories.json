@@ -1,0 +1,29 @@
+[
+	{
+		"name": "Fruit"
+	},
+	{
+		"name": "Vegetable"
+	},
+	{
+		"name": "Dairy Product"
+	},
+	{
+		"name": "Bread & Pastry"
+	},
+	{
+		"name": "Meat & Seafood"
+	},
+	{
+		"name": "Snack & Beverage"
+	},
+	{
+		"name": "Herbs & Spices"
+	},
+	{
+		"name": "Oils & Vinegar"
+	},
+	{
+		"name": "Canned & Packaged Goods"
+	}
+]

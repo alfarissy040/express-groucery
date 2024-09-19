@@ -1,6 +1,6 @@
-import type { TCommonError } from "@/types";
-import { decodeJWT } from "@/utility";
-import prisma from "@/utility/prisma";
+import type { TCommonError } from "@/src/types";
+import { decodeJWT } from "@/src/utility";
+import prisma from "@/src/utility/prisma";
 import type { Request, Response } from "express";
 import type { OtpJWT } from "jsonwebtoken";
 import { isEqual } from "lodash";

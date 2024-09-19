@@ -1,11 +1,11 @@
-import validate from "@/middleware/validate";
-import loginSchema from "@/schema/loginSchema";
-import registerSchema from "@/schema/registerSchema";
+import validate from "@/src/middleware/validate";
+import loginSchema from "@/src/schema/loginSchema";
+import otpSchema from "@/src/schema/otpSchema";
+import registerSchema from "@/src/schema/registerSchema";
 import { Router } from "express";
 import loginRoute from "./login/route";
 import registerRoute from "./register/route";
 import otpVerify from "./verify/route";
-import otpSchema from "@/schema/otpSchema";
 
 const authRouter = Router();
 

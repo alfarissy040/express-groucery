@@ -3,9 +3,9 @@ import cors, { type CorsOptions } from "cors";
 import dotenv from "dotenv";
 import express, { type Request, type Response } from "express";
 import rateLimit from "express-rate-limit";
+import emailVerification from "./email/otpEmailTemplate";
 import transporter from "./utility/transporter";
 import routerV1 from "./v1";
-import emailVerification from "./email/otpEmailTemplate";
 
 dotenv.config();
 
