@@ -5,6 +5,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"dev": "set DEBUG=express:* & nodemon --watch src --exec tsx src/index.ts",
+		"seed": "tsx prisma/migrate/migrate.ts",
 		"build": "tsc"
 	},
 	"keywords": [],
