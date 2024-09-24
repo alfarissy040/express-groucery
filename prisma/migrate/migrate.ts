@@ -43,9 +43,9 @@ async function seeder() {
 
 async function migrate() {
     try {
-        await prisma.category.deleteMany({})
-        await prisma.measurement_units.deleteMany({})
         await prisma.products.deleteMany({})
+        await prisma.measurement_units.deleteMany({})
+        await prisma.category.deleteMany({})
         await prisma.user.deleteMany({})
     } catch (error) {
         console.error(error)

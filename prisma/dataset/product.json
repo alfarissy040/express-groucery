@@ -6,7 +6,7 @@
 		"price": 5000,
 		"stock": 100,
 		"description": "Fresh red apple",
-		"image_url": "/public/images/pexels-pixabay-162709.jpg",
+		"image_url": "pexels-pixabay-162709.jpg",
 		"version": 1
 	},
 	{
@@ -16,7 +16,7 @@
 		"price": 3000,
 		"stock": 150,
 		"description": "Ripe yellow banana",
-		"image_url": "/public/images/pexels-roman-odintsov-4869228.jpg",
+		"image_url": "pexels-roman-odintsov-4869228.jpg",
 		"version": 1
 	},
 	{
@@ -26,7 +26,7 @@
 		"price": 12000,
 		"stock": 80,
 		"description": "Sweet orange fruit",
-		"image_url": "/public/images/pexels-ryutaro-5472362.jpg",
+		"image_url": "pexels-ryutaro-5472362.jpg",
 		"version": 1
 	},
 	{
@@ -36,7 +36,7 @@
 		"price": 10000,
 		"stock": 60,
 		"description": "Fresh crunchy carrot",
-		"image_url": "/public/images/pexels-enrike-torres-2615475-4193418.jpg",
+		"image_url": "pexels-enrike-torres-2615475-4193418.jpg",
 		"version": 1
 	},
 	{
@@ -46,7 +46,7 @@
 		"price": 15000,
 		"stock": 50,
 		"description": "Green and healthy broccoli",
-		"image_url": "/public/images/pexels-pixabay-47347.jpg",
+		"image_url": "pexels-pixabay-47347.jpg",
 		"version": 1
 	},
 	{
@@ -56,7 +56,7 @@
 		"price": 25000,
 		"stock": 30,
 		"description": "Sweet and juicy strawberries",
-		"image_url": "/public/images/pexels-karolina-grabowska-4038803.jpg",
+		"image_url": "pexels-karolina-grabowska-4038803.jpg",
 		"version": 1
 	},
 	{
@@ -66,7 +66,7 @@
 		"price": 9000,
 		"stock": 70,
 		"description": "Fresh spinach leaves",
-		"image_url": "/public/images/pexels-enginakyurt-2531197.jpg",
+		"image_url": "pexels-enginakyurt-2531197.jpg",
 		"version": 1
 	},
 	{
@@ -76,7 +76,7 @@
 		"price": 18000,
 		"stock": 40,
 		"description": "Sweet green grapes",
-		"image_url": "/public/images/pexels-readymade-3987364.jpg",
+		"image_url": "pexels-readymade-3987364.jpg",
 		"version": 1
 	},
 	{
@@ -86,7 +86,7 @@
 		"price": 8000,
 		"stock": 90,
 		"description": "Fresh potatoes",
-		"image_url": "/public/images/pexels-pixabay-144248.jpg",
+		"image_url": "pexels-pixabay-144248.jpg",
 		"version": 1
 	},
 	{
@@ -96,7 +96,7 @@
 		"price": 20000,
 		"stock": 50,
 		"description": "Sweet and ripe mangoes",
-		"image_url": "/public/images/pexels-manoj-patil-3401097-5097708.jpg",
+		"image_url": "pexels-manoj-patil-3401097-5097708.jpg",
 		"version": 1
 	},
 	{
@@ -106,7 +106,7 @@
 		"price": 6000,
 		"stock": 80,
 		"description": "Fresh and crisp cucumber",
-		"image_url": "/public/images/pexels-lo-422811-2329440.jpg",
+		"image_url": "pexels-lo-422811-2329440.jpg",
 		"version": 1
 	},
 	{
@@ -116,7 +116,7 @@
 		"price": 7000,
 		"stock": 120,
 		"description": "Juicy and sweet pear",
-		"image_url": "/public/images/pexels-victorino-4041094.jpg",
+		"image_url": "pexels-victorino-4041094.jpg",
 		"version": 1
 	},
 	{
@@ -126,7 +126,7 @@
 		"price": 14000,
 		"stock": 40,
 		"description": "Fresh bell peppers",
-		"image_url": "/public/images/pexels-thepaintedsquare-858096.jpg",
+		"image_url": "pexels-thepaintedsquare-858096.jpg",
 		"version": 1
 	},
 	{
@@ -136,7 +136,7 @@
 		"price": 25000,
 		"stock": 20,
 		"description": "Tropical pineapple",
-		"image_url": "/public/images/pexels-psco-137119.jpg",
+		"image_url": "pexels-psco-137119.jpg",
 		"version": 1
 	},
 	{
@@ -146,7 +146,7 @@
 		"price": 7000,
 		"stock": 100,
 		"description": "Fresh lettuce",
-		"image_url": "/public/images/pexels-kaip-1352199.jpg",
+		"image_url": "pexels-kaip-1352199.jpg",
 		"version": 1
 	},
 	{
@@ -156,7 +156,7 @@
 		"price": 18000,
 		"stock": 40,
 		"description": "Juicy peach",
-		"image_url": "/public/images/pexels-yesim-g-ozdemir-331486613-19742515.jpg",
+		"image_url": "pexels-yesim-g-ozdemir-331486613-19742515.jpg",
 		"version": 1
 	},
 	{
@@ -166,7 +166,7 @@
 		"price": 12000,
 		"stock": 50,
 		"description": "Fresh zucchini",
-		"image_url": "/public/images/pexels-angele-j-35172-128420.jpg",
+		"image_url": "pexels-angele-j-35172-128420.jpg",
 		"version": 1
 	},
 	{
@@ -176,7 +176,7 @@
 		"price": 30000,
 		"stock": 25,
 		"description": "Sweet red cherries",
-		"image_url": "/public/images/pexels-pixabay-162689.jpg",
+		"image_url": "pexels-pixabay-162689.jpg",
 		"version": 1
 	},
 	{
@@ -186,7 +186,7 @@
 		"price": 11000,
 		"stock": 75,
 		"description": "Fresh onions",
-		"image_url": "/public/images/pexels-karolina-grabowska-4197445.jpg",
+		"image_url": "pexels-karolina-grabowska-4197445.jpg",
 		"version": 1
 	},
 	{
@@ -196,7 +196,7 @@
 		"price": 35000,
 		"stock": 15,
 		"description": "Large watermelon",
-		"image_url": "/public/images/pexels-victorino-2288692.jpg",
+		"image_url": "pexels-victorino-2288692.jpg",
 		"version": 1
 	},
 	{
@@ -206,7 +206,7 @@
 		"price": 10000,
 		"stock": 60,
 		"description": "Fresh tomatoes",
-		"image_url": "/public/images/pexels-pixabay-209401.jpg",
+		"image_url": "pexels-pixabay-209401.jpg",
 		"version": 1
 	},
 	{
@@ -216,7 +216,7 @@
 		"price": 15000,
 		"stock": 35,
 		"description": "Sweet and tart plums",
-		"image_url": "/public/images/pexels-yuan-cao-250464215-28280665.jpg",
+		"image_url": "pexels-yuan-cao-250464215-28280665.jpg",
 		"version": 1
 	},
 	{
@@ -226,7 +226,7 @@
 		"price": 8000,
 		"stock": 40,
 		"description": "Fresh garlic",
-		"image_url": "/public/images/pexels-enginakyurt-1460862.jpg",
+		"image_url": "pexels-enginakyurt-1460862.jpg",
 		"version": 1
 	},
 	{
@@ -236,7 +236,7 @@
 		"price": 22000,
 		"stock": 30,
 		"description": "Tangy grapefruit",
-		"image_url": "/public/images/pexels-laker-6156975.jpg",
+		"image_url": "pexels-laker-6156975.jpg",
 		"version": 1
 	},
 	{
@@ -246,7 +246,7 @@
 		"price": 14000,
 		"stock": 55,
 		"description": "Fresh sweet corn",
-		"image_url": "/public/images/pexels-mateusz-feliksik-1896604-13422465.jpg",
+		"image_url": "pexels-mateusz-feliksik-1896604-13422465.jpg",
 		"version": 1
 	}
 ]

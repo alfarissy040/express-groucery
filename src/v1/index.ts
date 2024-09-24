@@ -1,4 +1,4 @@
-import { Router } from "express";
+import { type Request, type Response, Router } from "express";
 import authRouter from "./auth";
 import productRouter from "./products/route";
 
