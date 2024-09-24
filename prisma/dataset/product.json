@@ -1,6 +1,6 @@
 [
 	{
-		"id_category": ["1"],
+		"id_category": ["Fruit"],
 		"id_unit": "pcs",
 		"name": "Apple",
 		"price": 5000,
@@ -10,7 +10,7 @@
 		"version": 1
 	},
 	{
-		"id_category": ["1"],
+		"id_category": ["Fruit"],
 		"id_unit": "pcs",
 		"name": "Banana",
 		"price": 3000,
@@ -20,7 +20,7 @@
 		"version": 1
 	},
 	{
-		"id_category": ["1"],
+		"id_category": ["Fruit"],
 		"id_unit": "kg",
 		"name": "Orange",
 		"price": 12000,
@@ -30,7 +30,7 @@
 		"version": 1
 	},
 	{
-		"id_category": ["2"],
+		"id_category": ["Vegetable"],
 		"id_unit": "kg",
 		"name": "Carrot",
 		"price": 10000,
@@ -40,7 +40,7 @@
 		"version": 1
 	},
 	{
-		"id_category": ["2"],
+		"id_category": ["Vegetable"],
 		"id_unit": "kg",
 		"name": "Broccoli",
 		"price": 15000,
@@ -50,7 +50,7 @@
 		"version": 1
 	},
 	{
-		"id_category": ["1"],
+		"id_category": ["Fruit"],
 		"id_unit": "kg",
 		"name": "Strawberry",
 		"price": 25000,
@@ -60,7 +60,7 @@
 		"version": 1
 	},
 	{
-		"id_category": ["2"],
+		"id_category": ["Vegetable"],
 		"id_unit": "kg",
 		"name": "Spinach",
 		"price": 9000,
@@ -70,7 +70,7 @@
 		"version": 1
 	},
 	{
-		"id_category": ["1"],
+		"id_category": ["Fruit"],
 		"id_unit": "pcs",
 		"name": "Grapes",
 		"price": 18000,
@@ -80,7 +80,7 @@
 		"version": 1
 	},
 	{
-		"id_category": ["2"],
+		"id_category": ["Vegetable"],
 		"id_unit": "kg",
 		"name": "Potato",
 		"price": 8000,
@@ -90,7 +90,7 @@
 		"version": 1
 	},
 	{
-		"id_category": ["1"],
+		"id_category": ["Fruit"],
 		"id_unit": "kg",
 		"name": "Mango",
 		"price": 20000,
@@ -100,7 +100,7 @@
 		"version": 1
 	},
 	{
-		"id_category": ["2"],
+		"id_category": ["Vegetable"],
 		"id_unit": "kg",
 		"name": "Cucumber",
 		"price": 6000,
@@ -110,7 +110,7 @@
 		"version": 1
 	},
 	{
-		"id_category": ["1"],
+		"id_category": ["Fruit"],
 		"id_unit": "pcs",
 		"name": "Pear",
 		"price": 7000,
@@ -120,7 +120,7 @@
 		"version": 1
 	},
 	{
-		"id_category": ["2"],
+		"id_category": ["Vegetable"],
 		"id_unit": "kg",
 		"name": "Bell Pepper",
 		"price": 14000,
@@ -130,7 +130,7 @@
 		"version": 1
 	},
 	{
-		"id_category": ["1"],
+		"id_category": ["Fruit"],
 		"id_unit": "pcs",
 		"name": "Pineapple",
 		"price": 25000,
@@ -140,7 +140,7 @@
 		"version": 1
 	},
 	{
-		"id_category": ["2"],
+		"id_category": ["Vegetable"],
 		"id_unit": "kg",
 		"name": "Lettuce",
 		"price": 7000,
@@ -150,7 +150,7 @@
 		"version": 1
 	},
 	{
-		"id_category": ["1"],
+		"id_category": ["Fruit"],
 		"id_unit": "pcs",
 		"name": "Peach",
 		"price": 18000,
@@ -160,7 +160,7 @@
 		"version": 1
 	},
 	{
-		"id_category": ["2"],
+		"id_category": ["Vegetable"],
 		"id_unit": "kg",
 		"name": "Zucchini",
 		"price": 12000,
@@ -170,7 +170,7 @@
 		"version": 1
 	},
 	{
-		"id_category": ["1"],
+		"id_category": ["Fruit"],
 		"id_unit": "kg",
 		"name": "Cherry",
 		"price": 30000,
@@ -180,7 +180,7 @@
 		"version": 1
 	},
 	{
-		"id_category": ["2"],
+		"id_category": ["Vegetable"],
 		"id_unit": "kg",
 		"name": "Onion",
 		"price": 11000,
@@ -190,7 +190,7 @@
 		"version": 1
 	},
 	{
-		"id_category": ["1"],
+		"id_category": ["Fruit"],
 		"id_unit": "pcs",
 		"name": "Watermelon",
 		"price": 35000,
@@ -200,7 +200,7 @@
 		"version": 1
 	},
 	{
-		"id_category": ["2"],
+		"id_category": ["Vegetable"],
 		"id_unit": "kg",
 		"name": "Tomato",
 		"price": 10000,
@@ -210,7 +210,7 @@
 		"version": 1
 	},
 	{
-		"id_category": ["1"],
+		"id_category": ["Fruit"],
 		"id_unit": "pcs",
 		"name": "Plum",
 		"price": 15000,
@@ -220,7 +220,7 @@
 		"version": 1
 	},
 	{
-		"id_category": ["2"],
+		"id_category": ["Vegetable"],
 		"id_unit": "kg",
 		"name": "Garlic",
 		"price": 8000,
@@ -230,7 +230,7 @@
 		"version": 1
 	},
 	{
-		"id_category": ["1"],
+		"id_category": ["Fruit"],
 		"id_unit": "kg",
 		"name": "Grapefruit",
 		"price": 22000,
@@ -240,7 +240,7 @@
 		"version": 1
 	},
 	{
-		"id_category": ["2"],
+		"id_category": ["Vegetable"],
 		"id_unit": "kg",
 		"name": "Sweet Corn",
 		"price": 14000,

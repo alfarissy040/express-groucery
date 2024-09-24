@@ -34,8 +34,8 @@ model user {
 
 model products {
   id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  id_unit     String
   id_category String[] @db.ObjectId
-  id_unit     String   @db.ObjectId
   name        String
   price       Int
   stock       Int      @default(0)
@@ -46,31 +46,30 @@ model products {
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 
-  category category          @relation(fields: [id_category], references: [id], onUpdate: Cascade, onDelete: NoAction)
-  unit     measurement_units @relation(fields: [id_unit], references: [id], onUpdate: Cascade, onDelete: NoAction)
+  unit       measurement_units @relation(fields: [id_unit], references: [code], onUpdate: Cascade, onDelete: NoAction)
+  categories category[]        @relation("ProductCategories", fields: [id_category], references: [id])
 
   @@unique([id, version])
 }
 
 model category {
-  id   String @id @default(auto()) @map("_id") @db.ObjectId
-  name String
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  id_product String[] @db.ObjectId
+  name       String
 
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 
-  products products[]
+  products products[] @relation("ProductCategories", fields: [id_product], references: [id])
 }
 
 model measurement_units {
   id   String @id @default(auto()) @map("_id") @db.ObjectId
-  code String
+  code String @unique
   name String
 
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 
   products products[]
-
-  @@unique([code, name])
 }

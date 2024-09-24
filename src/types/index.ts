@@ -3,3 +3,5 @@ export type TCommonError = {
 	errors?: Record<string, any>;
 	message: string;
 };
+
+export type dbSort = "asc" | "desc"

@@ -3,8 +3,7 @@ import cors, { type CorsOptions } from "cors";
 import dotenv from "dotenv";
 import express, { type Request, type Response } from "express";
 import rateLimit from "express-rate-limit";
-import emailVerification from "./email/otpEmailTemplate";
-import transporter from "./utility/transporter";
+import path from "node:path";
 import routerV1 from "./v1";
 
 dotenv.config();
@@ -31,6 +30,8 @@ app.use(express.urlencoded());
 const port = process.env.PORT || 3000;
 
 app.use("/v1/", routerV1);
+
+app.use("/public/images", express.static(path.join(__dirname, "public/images")));
 
 // 404 not found
 app.use((req: Request, res: Response) => {

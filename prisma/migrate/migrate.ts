@@ -2,8 +2,9 @@ import prisma from "@/src/utility/prisma"
 import dataCategories from "../dataset/categories.json"
 import dataUnitMeasurement from "../dataset/measurement_units.json";
 import dataProducts from "../dataset/product.json"
+import { includes } from "lodash";
 
-async function main() {
+async function seeder() {
     try {
         await prisma.measurement_units.createMany({
             data: dataUnitMeasurement
@@ -16,9 +17,15 @@ async function main() {
         const categories = await prisma.category.findMany({})
 
         dataProducts.map(async (item) => {
+            const id_category = categories.reduce((acc: string[], value) => {
+                if (includes(item.id_category, value.name)) {
+                    acc.push(value.id)
+                }
+                return acc
+            }, [])
             await prisma.products.create({
                 data: {
-                    id_category: [...item.id_category[0] === "1" ? categories[0].id : categories[1].id],
+                    id_category: id_category,
                     id_unit: item.id_unit,
                     name: item.name,
                     price: item.price,
@@ -34,12 +41,27 @@ async function main() {
     }
 }
 
-main()
-    .then(async () => {
+async function migrate() {
+    try {
+        await prisma.category.deleteMany({})
+        await prisma.measurement_units.deleteMany({})
+        await prisma.products.deleteMany({})
+        await prisma.user.deleteMany({})
+    } catch (error) {
+        console.error(error)
+    }
+}
+
+async function main() {
+    try {
+        await migrate()
+        await seeder()
         await prisma.$disconnect()
-    })
-    .catch(async (e) => {
-        console.error(e)
-        await prisma.$disconnect()
+    } catch (error) {
+        console.error(error)
+    } finally {
         process.exit(1)
-    })
+    }
+}
+
+main()
