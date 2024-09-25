@@ -1,6 +1,6 @@
 import { unlink } from "node:fs";
 import type { NextFunction, Request, Response } from "express";
-import type { ZodSchema } from "zod";
+import type { z, ZodSchema } from "zod";
 
 const validateFormData =
     (schema: ZodSchema) => (req: Request, res: Response, next: NextFunction) => {
@@ -23,11 +23,15 @@ const validateFormData =
 
                 throw errorMessage;
             }
+
+            req.body = result.data as z.infer<typeof schema>;
             next();
         } catch (err) {
-            unlink(file.path, (err) => {
-                if (err) console.error("Failed to delete file:", err);
-            })
+            if (file) {
+                unlink(file.path, (err) => {
+                    if (err) console.error("Failed to delete file:", err);
+                })
+            }
             return res.status(400).json({ error: err });
         }
     };
