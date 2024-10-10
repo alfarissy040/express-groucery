@@ -28,11 +28,12 @@ const loginRoute = async (req: Request, res: Response) => {
             role: user.role,
             exp: moment().add(24, "h").valueOf(),
         });
-
-        res.cookie("jwt", token, {
+        res.set("Authorization", `Bearer ${token}`);
+        res.cookie("token", token, {
             httpOnly: true,
             secure: true,
             maxAge: 24 * 3600,
+            sameSite: "none",
         });
         return res.status(200).send({ message: "Login success!" });
     } catch (err) {
