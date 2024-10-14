@@ -5,6 +5,7 @@ import { hashPassword, signJWT } from "@/src/utility";
 import prisma from "@/src/utility/prisma";
 import transporter from "@/src/utility/transporter";
 import type { Request, Response } from "express";
+import { isEqual } from "lodash";
 import moment from "moment";
 
 const registerRoute = async (req: Request, res: Response) => {
@@ -16,15 +17,16 @@ const registerRoute = async (req: Request, res: Response) => {
             select: { username: true, email: true },
             where: { OR: [{ username: username }, { email: email }] },
         });
-
         if (isUnique) {
             const errorValidateUnique: Partial<
                 Record<"username" | "email", string>
             > = {};
-            if (isUnique?.username)
+            if (isEqual(isUnique?.username, username)) {
                 errorValidateUnique.username = "Username is already taken!";
-            if (isUnique?.email)
+            }
+            if (isEqual(isUnique?.email, email)) {
                 errorValidateUnique.email = "Email is already in use!";
+            }
             throw {
                 status: 401,
                 errors: errorValidateUnique,

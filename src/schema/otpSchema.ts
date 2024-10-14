@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 const otpSchema = z.object({
-    otp: z.string().min(1, {
+    otp: z.number().min(1, {
         message: "OTP is Required!",
     }),
     username: z.string().min(1, {

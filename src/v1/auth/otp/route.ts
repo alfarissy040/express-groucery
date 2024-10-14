@@ -14,8 +14,8 @@ const otpVerify = async (req: Request, res: Response) => {
         if (user.emailVerified) throw ({ status: 400, message: "Email already verified" });
 
         const userOtp = decodeJWT(user.verificationToken) as OtpJWT;
-        if (!userOtp) throw ({ status: 400, message: "Invalid OTP" });
-        if (!isEqual(userOtp.otp, otp)) throw ({ status: 400, message: "Invalid OTP" });
+        if (!userOtp) throw ({ status: 400, message: "Invalid OTP 1" });
+        if (!isEqual(userOtp.otp, otp as string)) throw ({ status: 400, message: "Invalid OTP 2" });
         if (userOtp.exp < Date.now()) throw ({ status: 400, message: "OTP expired" });
 
         await prisma.user.update({ where: { username: username }, data: { emailVerified: true } })
